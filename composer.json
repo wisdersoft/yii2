@@ -1,0 +1,28 @@
+{
+    "name": "wisdersoft/yii2",
+    "description": "Extend yii2",
+    "keywords": ["yii2"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dickens Gao",
+            "email": "dickensgao@protonmail.ch"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+    },
+    "require-dev": {
+        "yidas/yii2-composer-bower-skip": "~2.0.5",
+        "yiisoft/yii2": "~2.0.14"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "wisder\\yii\\": "src"
+        }
+    }
+}
