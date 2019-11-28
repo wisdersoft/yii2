@@ -40,7 +40,7 @@ class Controller extends \yii\rest\Controller
                         'tokenParam' => 'token',
                     ],
                 ],
-                'optional' => $this->optional;
+                'optional' => $this->optional,
             ],
             'rateLimiter' => [
                 'class' => RateLimiter::class,
