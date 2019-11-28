@@ -12,6 +12,8 @@ use yii\web\Response;
 
 class Controller extends \yii\rest\Controller
 {
+    public $optional = [];
+
     public function behaviors()
     {
         return [
@@ -38,6 +40,7 @@ class Controller extends \yii\rest\Controller
                         'tokenParam' => 'token',
                     ],
                 ],
+                'optional' => $this->optional;
             ],
             'rateLimiter' => [
                 'class' => RateLimiter::class,
